@@ -1,0 +1,30 @@
+.cardsWr {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  width: 50%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+@media (min-width: 769px) and (max-width: 1240px) {
+  .cardsWr {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardsWr {
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+  }
+}

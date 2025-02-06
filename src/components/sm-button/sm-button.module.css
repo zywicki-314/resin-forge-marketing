@@ -1,0 +1,83 @@
+.sm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 0px;
+  line-height: 0px;
+
+  width: 64px;
+  height: 64px;
+  /* height: 98px; */
+
+  color: #ffffff;
+  /* }
+
+.icon { */
+  /* position: relative;
+  display: flex; */
+
+  /* width: 64px;
+  height: 64px; */
+
+  border-radius: 100%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+
+  transition: all ease 0.5s;
+}
+
+/* Color */
+
+.grey {
+  background-color: #7d7d7d;
+}
+.grey:hover {
+  background-color: #3c3c3c;
+}
+
+.primary {
+  background-color: #957bff;
+}
+.primary:hover {
+  background-color: #957bff;
+}
+
+/* LINK */
+
+.linkdIn {
+  background-image: url("/public/img/linkedin.png");
+}
+.instagram {
+  background-image: url("/public/img/insta-svg.svg");
+}
+.facebook {
+  background-image: url("/public/img/bi_facebook.png");
+}
+.phone {
+  background-image: url("/public/img/call.png");
+}
+
+.email {
+  background-image: url("/public/img/mark_email.png");
+}
+.email::after {
+  content: "";
+
+  position: absolute;
+  display: flex;
+
+  width: 10px;
+  height: 10px;
+
+  right: 25%;
+  top: 25%;
+
+  border-radius: 100%;
+
+  background-color: #fff;
+}

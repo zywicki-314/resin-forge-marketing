@@ -1,0 +1,613 @@
+.asideMob {
+  position: relative;
+}
+.btnX {
+  position: absolute;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 34px;
+  height: 34px;
+
+  top: 32px;
+  right: 0;
+
+  background-color: transparent;
+}
+
+.btnX::after,
+.btnX::before {
+  content: "";
+  position: absolute;
+
+  width: 2px;
+  height: 34px;
+
+  top: 0;
+
+  background-color: #ffffff;
+}
+
+.btnX::after {
+  transform: rotate(45deg);
+}
+.btnX::before {
+  transform: rotate(-45deg);
+}
+
+.menuMobContainer {
+  position: relative;
+  display: flex;
+  width: 60%;
+  /* width: 0;
+    height: 0; */
+  /* height: 100%; */
+  /* background-color: #957bff; */
+}
+
+.menuWr,
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+.menuWr {
+  justify-content: space-between;
+  /* width: 60%; */
+  width: 100%;
+
+  padding-right: 0.2%;
+
+  /* background-color: #fff; */
+}
+
+.logoTitleMobile {
+  display: none;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.bizName {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: var(--light-font);
+}
+
+.menu {
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+}
+
+.menuItem {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 100%;
+
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--light-font);
+  transition: all 1s ease;
+  /* background-color: burlywood; */
+}
+
+.menuItem:hover::after {
+  content: "";
+
+  position: absolute;
+  display: flex;
+
+  width: 80px;
+  height: 3px;
+  bottom: 0;
+  right: 0;
+
+  background: #957bff;
+  transition: all 1s ease;
+}
+
+.chLang {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 140px;
+  height: 48px;
+
+  border-radius: 30px;
+  background-color: #242528;
+}
+
+.selectCss {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 140px;
+  height: 48px;
+
+  padding-left: 70px;
+  border-radius: 30px;
+
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--light-font);
+
+  appearance: none;
+  background-color: #242528;
+
+  background-image: url("/public/img/globe.png");
+  background-position: 45px center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.selectCss option {
+  /* text-align: center; */
+  font-size: 14px;
+}
+
+.smWrMob {
+  display: none;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .menuMobContainer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: #000000ab;
+
+    z-index: 10;
+
+    transition: all 0.5s ease 0s, opacity 0.5s;
+  }
+
+  .asideMob {
+    display: flex;
+
+    width: 30%;
+    height: 100%;
+  }
+
+  .menuWr {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    width: 70%;
+    height: 100%;
+
+    top: 0;
+    right: 0;
+
+    background-color: #000000;
+
+    z-index: 10;
+    opacity: 1;
+  }
+
+  .logoTitleMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100px;
+  }
+
+  .logoTitleMobile img {
+    width: 46px;
+    height: 80px;
+    margin: 0 16px 0 0;
+  }
+
+  .logoTitleMobile .bizName {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: var(--light-font);
+  }
+
+  .menu {
+    position: relative;
+    flex-direction: column;
+
+    height: 190px;
+    width: 100%;
+
+    margin: 58px 0;
+    padding: 0 0 0 18px;
+    /* border: 1px solid red; */
+  }
+
+  .menuItem {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    width: 100%;
+    height: 26px;
+
+    padding: 0 0 0 45px;
+
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: none;
+
+    /* background-color: #fff; */
+  }
+  .menuItem:hover::after {
+    content: "";
+    display: none;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    overflow: hidden;
+  }
+
+  .menuHome {
+    background-image: url("/public/img/home-mob.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+  }
+  .menuAbout {
+    background-image: url("/public/img/about-mob.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+  }
+  .menuBlog {
+    background-image: url("/public/img/blog-mob.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+  }
+  .menuContact {
+    background-image: url("/public/img/contact-mob.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+  }
+
+  .chLang {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100px;
+  }
+
+  .selectCss {
+    width: 140px;
+    height: 48px;
+
+    padding-left: 70px;
+    border-radius: 30px;
+    /* border: 1px solid red; */
+  }
+
+  .langOption {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .smWrMob {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    justify-content: space-between;
+
+    bottom: 160px;
+
+    /* width: 160px; */
+    width: 80%;
+    height: 40px;
+
+    margin: 0 auto;
+
+    overflow: visible;
+  }
+  .smWrMob .sm {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+
+    width: 40px;
+    height: 40px;
+
+    color: #ffffff;
+    /* background-color: #dfe0df; */
+  }
+
+  .smWrMob .sm .smIcon,
+  .smWrMob .sm .smMailIcon,
+  .smWrMob .sm .smIconCall {
+    position: relative;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 100%;
+  }
+
+  .smWrMob .mail .smMailIcon::after {
+    content: "";
+
+    position: absolute;
+    display: flex;
+
+    width: 6px;
+    height: 6px;
+
+    right: 24%;
+    top: 23%;
+
+    border-radius: 100%;
+
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1240px) {
+  .menuMobContainer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: #000000ab;
+
+    z-index: 10;
+    /* opacity: 0.2; */
+
+    transition: all 0.5s ease 0s, opacity 0.5s;
+  }
+
+  .asideMob {
+    display: flex;
+
+    width: 30%;
+    height: 100%;
+
+    /* background-color: #957bff; */
+  }
+
+  .menuWr {
+    /* display: none; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    width: 70%;
+    height: 100%;
+
+    top: 0;
+    right: 0;
+
+    /* background-color: #1b1b1b; */
+    background-color: #000000;
+
+    z-index: 10;
+    opacity: 1;
+  }
+
+  .logoTitleMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100px;
+  }
+
+  .logoTitleMobile img {
+    width: 46px;
+    height: 80px;
+    margin: 0 16px 0 0;
+  }
+
+  .logoTitleMobile .bizName {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: var(--light-font);
+  }
+
+  .menu {
+    position: relative;
+    /* out */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+
+    height: 120px;
+    width: 90%;
+    /* width: 100%; */
+
+    /* margin: 58px 0; */
+    margin: 20px 0;
+    /* padding: 0 0 0 18px; */
+    /* border: 1px solid red; */
+  }
+
+  .menuItem {
+    display: flex;
+    /* align-items: center;
+          justify-content: start; */
+
+    /* width: 100%; */
+    width: 40%;
+    /* width: 140px; */
+    height: 26px;
+    /* height: 26px; */
+
+    /* padding: 0 0 0 45px; */
+
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: none;
+
+    /* background-color: #fff; */
+    /* border: 1px solid red; */
+  }
+  .menuItem:hover::after {
+    content: "";
+    display: none;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    overflow: hidden;
+  }
+
+  .menuHome {
+    background-image: url("/public/img/home-mob.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+  }
+
+  .menuAbout {
+    background-image: url("/public/img/about-mob.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+  }
+  .menuBlog {
+    background-image: url("/public/img/blog-mob.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+  }
+  .menuContact {
+    background-image: url("/public/img/contact-mob.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+  }
+
+  .chLang {
+    width: 100px;
+    margin: 0 auto;
+  }
+
+  .selectCss {
+    width: 100px;
+    height: 48px;
+
+    padding-left: 70px;
+    border-radius: 30px;
+    /* border: 1px solid red; */
+  }
+
+  .langOption {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .smWrMob {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    justify-content: space-between;
+
+    bottom: 50px;
+
+    /* width: 160px; */
+    width: 80%;
+    height: 40px;
+
+    margin: 0 auto;
+
+    overflow: visible;
+  }
+  .smWrMob .sm {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+
+    width: 40px;
+    height: 40px;
+
+    color: #ffffff;
+    /* background-color: #dfe0df; */
+  }
+
+  .smWrMob .sm .smIcon,
+  .smWrMob .sm .smMailIcon,
+  .smWrMob .sm .smIconCall {
+    position: relative;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 100%;
+  }
+
+  .smWrMob .mail .smMailIcon::after {
+    content: "";
+
+    position: absolute;
+    display: flex;
+
+    width: 6px;
+    height: 6px;
+
+    right: 24%;
+    top: 23%;
+
+    border-radius: 100%;
+
+    background-color: #fff;
+  }
+}

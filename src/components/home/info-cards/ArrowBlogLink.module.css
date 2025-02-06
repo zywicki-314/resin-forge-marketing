@@ -1,0 +1,41 @@
+.more {
+  position: absolute;
+  display: flex;
+
+  text-decoration: none;
+  font-size: 0;
+  line-height: 0;
+
+  width: 40px;
+  height: 40px;
+
+  bottom: 10px;
+  right: 10px;
+
+  border-radius: 100%;
+  background-color: #957bff;
+  transition: all ease 1s;
+}
+
+.more:hover {
+  background-color: #7a64d1;
+}
+
+.more::before {
+  content: "";
+
+  position: absolute;
+  display: flex;
+
+  width: 16px;
+  height: 18px;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background-image: url("/public/img/arrow-north_black1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+}

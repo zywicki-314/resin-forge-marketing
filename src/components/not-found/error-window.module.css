@@ -1,0 +1,276 @@
+.mainBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  width: 860px;
+  height: 462px;
+  border-radius: 20px;
+  opacity: 0px;
+
+  margin: 80px auto auto auto;
+
+  background: #242528;
+
+  box-shadow: -20px 25px 0px #7d7d7d;
+}
+
+.decorNavBar {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 64px;
+
+  padding-left: 38px;
+
+  border-radius: 20px 20px 0 0;
+  background: #bcacff;
+}
+
+.blackDot {
+  display: flex;
+
+  width: 13px;
+  height: 13px;
+  margin-right: 20px;
+  border-radius: 100%;
+  background: #242528;
+}
+
+.contentPart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 404px;
+}
+
+.typeError {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  width: 424px;
+  height: 170px;
+
+  margin: 0;
+  padding: 0;
+
+  text-transform: uppercase;
+  font-size: 200px;
+  line-height: 170px;
+  font-weight: 600;
+}
+
+.symbolError {
+  position: relative;
+  display: flex;
+  width: max-content;
+  height: max-content;
+
+  margin: 0;
+  padding: 0;
+
+  color: transparent;
+  background: linear-gradient(
+    180deg,
+    rgba(130, 130, 130, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.symbolError::after {
+  content: "";
+
+  position: absolute;
+  display: flex;
+
+  width: 16px;
+  height: 16px;
+
+  bottom: 0px;
+  right: -20px;
+
+  border-radius: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(149, 123, 255, 1) 0%,
+    rgba(89, 74, 153, 1) 100%
+  );
+}
+
+.errorComent {
+  display: flex;
+  margin: 16px 0 0 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: #b7ab98;
+}
+
+.homeLink {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+
+  width: 324px;
+  height: 104px;
+
+  bottom: -60px;
+  right: 50%;
+
+  transform: translateX(50%);
+
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+
+  font-size: 30px;
+  font-weight: 500;
+
+  background: #957bff;
+  border-radius: 30px;
+  box-shadow: -10px 15px 0px #7d7d7d;
+
+  overflow: visible;
+  z-index: 10;
+  transition: all ease 1s;
+}
+
+.homeLink:hover {
+  width: 344px;
+  height: 124px;
+  background: #5f4ea1;
+}
+
+.decorWindow1 {
+  position: absolute;
+  display: flex;
+
+  width: 238px;
+  height: 108px;
+
+  top: 40%;
+  right: 100%;
+  transform: translateY(-50%);
+  transform: translateX(50%);
+}
+
+.decorWText1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  color: #b7ab98;
+}
+
+.decorWindow2 {
+  position: absolute;
+  display: flex;
+
+  width: 160px;
+  height: 160px;
+
+  bottom: 0%;
+  right: 0%;
+  transform: translate(50%, 50%);
+}
+
+.mainCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: #ae9fa4;
+}
+
+.circle {
+  position: relative;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: #faf2f6;
+}
+
+.circle::before,
+.circle::after {
+  content: "";
+
+  position: absolute;
+  display: flex;
+
+  top: 50%;
+  right: 50%;
+
+  width: 68px;
+  height: 6px;
+  background: #ae9fa4;
+}
+
+.circle::before {
+  transform: translate(50%, -50%) rotate(45deg);
+}
+.circle::after {
+  transform: translate(50%, -50%) rotate(-45deg);
+}
+
+.decorWindow3 {
+  position: absolute;
+  display: flex;
+
+  width: 180px;
+  height: 140px;
+
+  top: 0%;
+  right: 0%;
+  transform: translate(50%, -30%);
+}
+
+.errorArrow {
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+@media (max-width: 1240px) {
+  .mainBlock {
+    width: 90%;
+  }
+  /* .contentPart {
+
+  } */
+  .typeError {
+    width: 80%;
+    height: max-content;
+    font-size: 120px;
+    line-height: 100%;
+  }
+
+  .decorWindow1 {
+    top: 16%;
+    right: auto;
+    left: -5%;
+    transform: translate(0, 0);
+  }
+
+  .decorWindow2 {
+    bottom: -55%;
+    right: 50%;
+    transform: translate(50%, 0);
+  }
+
+  .decorWindow3 {
+    top: -16%;
+    right: -5%;
+    transform: translate(0, 0);
+  }
+}

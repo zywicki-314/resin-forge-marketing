@@ -1,0 +1,38 @@
+.introCol {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  width: 35%;
+  height: 100%;
+}
+
+@media (min-width: 769px) and (max-width: 1240px) {
+  .introCol {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .introCol {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+
+    margin: 0 auto;
+  }
+}
+
+/*   
+  @media (min-width: 769px) and (max-width: 1240px) {
+    
+  }
+  
+  @media (max-width: 768px) {
+   
+  } */

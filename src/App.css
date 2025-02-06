@@ -1,0 +1,42 @@
+/* .App {
+  text-align: center;
+} */
+
+@media (min-width: 1241px) {
+  .active::after {
+    content: "";
+
+    position: absolute;
+    display: flex;
+
+    width: 80px;
+    height: 3px;
+    bottom: 0;
+    right: 0;
+
+    background: #957bff;
+    transition: all 1s ease;
+  }
+}
+
+@media (max-width: 768px) {
+  .active::after {
+    /* content: ""; */
+    display: none;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1240px) {
+  .active::after {
+    /* content: ""; */
+    display: none;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    overflow: hidden;
+  }
+}

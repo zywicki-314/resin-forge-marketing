@@ -1,0 +1,33 @@
+.postLink {
+  position: relative;
+  display: flex;
+
+  width: 100%;
+  height: auto;
+
+  margin-top: 10px;
+  padding-left: 16px;
+
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 200;
+  text-wrap: wrap;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.postLink::before {
+  content: "";
+
+  position: absolute;
+  display: block;
+
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+
+  top: 4px;
+  left: 0;
+
+  background-color: #957bff;
+}

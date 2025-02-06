@@ -1,0 +1,89 @@
+.mainTitle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 100%;
+  max-height: 48%;
+
+  text-transform: uppercase;
+  font-size: 80px;
+  line-height: 120%;
+}
+
+.sw2 {
+  position: relative;
+  display: flex;
+  width: min-content;
+  color: #ffffff;
+}
+
+.sw1 {
+  color: transparent;
+  background-clip: text;
+  background: linear-gradient(
+    180deg,
+    rgba(130, 130, 130, 1) 0%,
+    rgba(255, 255, 255, 1) 50%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sw3 {
+  color: transparent;
+  background-clip: text;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(130, 130, 130, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (min-width: 769px) and (max-width: 1240px) {
+  .mainTitle {
+    font-size: 80px;
+    line-height: 100%;
+
+    margin: 30px 0;
+  }
+
+  .sw2 {
+    position: relative;
+    display: flex;
+    width: min-content;
+    color: #ffffff;
+  }
+
+  .sw1 {
+    color: transparent;
+    background-clip: text;
+    background: linear-gradient(
+      180deg,
+      rgba(130, 130, 130, 1) 0%,
+      rgba(255, 255, 255, 1) 50%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .sw3 {
+    color: transparent;
+    background-clip: text;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(130, 130, 130, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 56px;
+    line-height: 100%;
+
+    margin: 30px 0;
+  }
+}

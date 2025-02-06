@@ -1,0 +1,21 @@
+.aboutWr {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 90%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1240px) {
+  .aboutWr {
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: auto;
+
+    margin: 0 auto;
+  }
+}

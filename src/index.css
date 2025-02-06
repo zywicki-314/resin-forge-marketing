@@ -1,0 +1,120 @@
+:root {
+  --main-bc: #131313;
+  --main-accent-color: #957bff;
+  --dark-accent: #0f0f0f;
+  --lgrey: #7d7d7d;
+  --mgrey: #242528;
+  --dgrey: #383734;
+
+  --light-font: #f6f6f6;
+  --dark-font: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* scrollbar-width: 0; */
+  /* background-color: var(--main-bc); */
+
+  background: radial-gradient(
+    circle at 20% 30%,
+    #00002b,
+    #000021,
+    #000017,
+    #00000e,
+    #000006,
+    #000002,
+    #000000,
+    #000000
+  );
+
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* fonts start */
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.font-outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-lato {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+.font-overpass {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.font-syne {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* fonts end */
+
+.hiddenItems {
+  position: absolute;
+  display: none;
+  width: 0;
+  height: 0;
+  margin: 0;
+  /* right: 1000px; */
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  background: transparent;
+  border: none;
+  opacity: 0;
+
+  overflow: hidden;
+  transform: scale(0);
+  transition: all 0.5s ease 0s, opacity 0.5s;
+
+  z-index: -10;
+}

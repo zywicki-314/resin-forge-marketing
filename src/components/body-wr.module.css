@@ -1,0 +1,33 @@
+.bodyWr {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  width: 1440px;
+  height: 89vh;
+  margin: 0 auto;
+  padding: 0 1%;
+  /* del */
+}
+
+@media (min-width: 769px) and (max-width: 1240px) {
+  .bodyWr {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .bodyWr {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+  }
+}
