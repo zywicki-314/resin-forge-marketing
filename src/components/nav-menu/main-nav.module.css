@@ -1,4 +1,20 @@
+/*  */
+/*  */
+/* .gitLink {
+  position: absolute;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 200px;
+} */
+
+/*  */
+
+/*  */
 .mainNav {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,6 +27,7 @@
 }
 
 .logoTitle {
+  position: relative;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -22,7 +39,7 @@
   object-fit: contain;
   width: 40px;
   height: 70px;
-
+  /* 60px out */
   margin: 0 10px 0 0;
 }
 

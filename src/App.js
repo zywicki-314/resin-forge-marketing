@@ -23,6 +23,18 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
+        <a
+          href="https://github.com/zywicki-314/resin-forge-marketing"
+          rel="noreferrer"
+          target="_blank"
+          className="gitLink"
+        >
+          <img
+            src="/img/github-svgrepo-com.svg"
+            alt="logo GitHub"
+            className="logoGitHub"
+          />
+        </a>
       </div>
     </BrowserRouter>
   );

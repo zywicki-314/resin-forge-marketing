@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import MenuNav from "./menu-nav-and-mob";
 import MediaQuery from "react-responsive";
 import style from "./main-nav.module.css";
 import { useState } from "react";
+// import { isAction } from "redux";
 
 const MainNav = () => {
   const [mobMenu, setMobMenu] = useState(false);
@@ -16,14 +17,29 @@ const MainNav = () => {
 
   return (
     <nav className={style.mainNav}>
-      <Link to="." className={style.logoTitle}>
+      {/* <Link
+        className={style.gitLink}
+        href="https://github.com/zywicki-314/resin-forge-marketing"
+      >
+        <img
+          src="/img/github-svgrepo-com.svg"
+          alt="logo GitHub"
+          className={style.logoGitHub}
+        />
+      </Link> */}
+      <NavLink
+        to="."
+        className={({ isActive }) =>
+          isActive ? `${style.logoTitle}` : `${style.logoTitle}`
+        }
+      >
         <img
           src="/img/Logo.png"
           alt="logo ResinForge"
           className={style.logoHeader}
         />
         <span className={style.bizName}>Resin Forge</span>
-      </Link>
+      </NavLink>
       <MediaQuery maxWidth={1239}>
         <button className={style.menuToggle} onClick={openMobMenu}></button>
       </MediaQuery>

@@ -89,7 +89,7 @@ const MenuNav = (props) => {
         </MediaQuery>
       </div>
       <div className={style.menuWr}>
-        <NavLink to="." end className={style.logoTitleMobile}>
+        <NavLink to="/" end className={style.logoTitleMobile}>
           <img
             src="/img/Logo.png"
             alt="logo Resin Forge"

@@ -246,7 +246,6 @@
 
     margin: 58px 0;
     padding: 0 0 0 18px;
-    /* border: 1px solid red; */
   }
 
   .menuItem {
@@ -312,7 +311,6 @@
 
     padding-left: 70px;
     border-radius: 30px;
-    /* border: 1px solid red; */
   }
 
   .langOption {
@@ -471,8 +469,6 @@
 
     /* margin: 58px 0; */
     margin: 20px 0;
-    /* padding: 0 0 0 18px; */
-    /* border: 1px solid red; */
   }
 
   .menuItem {
@@ -493,7 +489,6 @@
     text-transform: none;
 
     /* background-color: #fff; */
-    /* border: 1px solid red; */
   }
   .menuItem:hover::after {
     content: "";
@@ -541,7 +536,6 @@
 
     padding-left: 70px;
     border-radius: 30px;
-    /* border: 1px solid red; */
   }
 
   .langOption {

@@ -238,7 +238,6 @@
 
 .errorArrow {
   display: flex;
-  /* border: 1px solid red; */
 }
 
 @media (max-width: 1240px) {

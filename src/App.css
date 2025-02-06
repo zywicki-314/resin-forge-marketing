@@ -1,6 +1,16 @@
-/* .App {
-  text-align: center;
-} */
+.App {
+  position: relative;
+  /* text-align: center; */
+}
+
+.gitLink {
+  position: absolute;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  bottom: 0;
+  right: 10px;
+}
 
 @media (min-width: 1241px) {
   .active::after {

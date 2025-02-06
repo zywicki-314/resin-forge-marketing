@@ -1,7 +1,7 @@
 import style from "./asideContact.module.css";
 import MediaQuery from "react-responsive";
 import SmButton from "./sm-button/sm-button.tsx";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function AsideContact() {
   const linkFacebook = "https://www.facebook.com/";
@@ -20,9 +20,13 @@ function AsideContact() {
       </MediaQuery>
 
       <MediaQuery minWidth={769}>
-        <Link
+        <NavLink
           to="/contact"
-          className={`${style.email} ${style.sm} ${style.primary}`}
+          className={({ isActive }) =>
+            isActive
+              ? `${style.email} ${style.sm} ${style.primary}`
+              : `${style.email} ${style.sm} ${style.primary}`
+          }
         />
       </MediaQuery>
     </div>
