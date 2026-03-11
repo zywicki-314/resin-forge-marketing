@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Resin Forge Marketing – App-like UX Experience
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+![CSS Modules](https://img.shields.io/badge/CSS_Modules-000000?style=for-the-badge&logo=css-modules&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-## Available Scripts
+## 🚀 Live Demo
+[resin-forge-marketing.vercel.app](https://resin-forge-marketing.vercel.app/)
 
-In the project directory, you can run:
+## 📝 Opis projektu
+**Resin Forge Marketing** to aplikacja webowa zaprojektowana w filozofii "App-not-Website". Głównym założeniem UX/UI było stworzenie interfejsu, który mieści się w całości na jednym ekranie (Single Screen UI), eliminując potrzebę tradycyjnego scrollowania i dając użytkownikowi poczucie korzystania z natywnej aplikacji desktopowej.
 
-### `npm start`
+## ✨ Kluczowe rozwiązania techniczne
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🌍 Zaawansowana Lokalizacja i Redux
+Projekt implementuje niestandardowy system zmiany języka, który jest ściśle zintegrowany z adresem URL:
+- **Stan Globalny:** Redux zarządza wybranym językiem aplikacji.
+- **Synchronizacja z URL:** Wybór języka jest odzwierciedlony w adresie URL (np. `#lang=en`), co pozwala na zachowanie preferencji użytkownika nawet po odświeżeniu strony lub przesłaniu linku.
+- **Persistence:** Wybrany język zostaje zachowany podczas nawigacji między podstronami dzięki synchronizacji Reduxa z routerem.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🏗 Architektura i Stylizacja
+- **React Router:** Obsługa nawigacji wewnątrz aplikacji typu Single Page.
+- **CSS Modules:** Wykorzystanie podejścia modułowego do stylowania, co zapewnia pełną izolację stylów, brak konfliktów w nazewnictwie klas i łatwiejsze utrzymanie kodu (Maintainability).
+- **Single Screen Layout:** Interfejs zaprojektowany tak, aby optymalnie wykorzystywać przestrzeń roboczą bez konieczności przewijania strony.
 
-### `npm test`
+## 🛠 Stos technologiczny
+- **Frontend:** React (Hooks, Functional Components)
+- **State Management:** Redux Toolkit (z logiką śledzenia zmian URL)
+- **Routing:** React Router
+- **Stylizacja:** CSS Modules / SASS
+- **Deployment:** Vercel
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💡 Czego uczy ten projekt?
+Projekt ten był wyzwaniem w zakresie **synchronizacji stanu aplikacji z adresem URL**. Nauczył mnie, jak budować aplikacje, które są nie tylko estetyczne, ale przede wszystkim funkcjonalne i przewidywalne dla użytkownika (zachowanie stanu języka, intuicyjna nawigacja).
 
-### `npm run build`
+[Image of a dashboard application layout on a single screen]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🔧 Instalacja i uruchomienie
+1. Sklonuj repozytorium:
+   ```bash
+   git clone [https://github.com/zywicki-314/resin-forge-marketing.git](https://github.com/zywicki-314/resin-forge-marketing.git)
